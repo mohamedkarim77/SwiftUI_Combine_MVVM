@@ -23,7 +23,7 @@ extension NewsAPI: ApiBuilderProtocol {
     var baseURL: URL {
         switch self {
         case .getNews:
-            return URL(string: "https://lil.software")!
+            return URL(string: "https://api.lil.software")!
         }
     }
     var path: String {

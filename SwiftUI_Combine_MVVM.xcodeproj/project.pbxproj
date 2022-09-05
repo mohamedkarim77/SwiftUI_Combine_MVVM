@@ -17,6 +17,9 @@
 		8A47474628C607C90091EEBA /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A47474528C607C90091EEBA /* NewsService.swift */; };
 		8A47474928C62D420091EEBA /* ResultState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A47474828C62D420091EEBA /* ResultState.swift */; };
 		8A47474C28C62E220091EEBA /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A47474B28C62E220091EEBA /* NewsViewModel.swift */; };
+		8A47474E28C6372C0091EEBA /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A47474D28C6372C0091EEBA /* ErrorView.swift */; };
+		8A47475028C64F4B0091EEBA /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A47474F28C64F4B0091EEBA /* ArticleView.swift */; };
+		8A47475328C64FCB0091EEBA /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8A47475228C64FCB0091EEBA /* URLImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,8 @@
 		8A47474528C607C90091EEBA /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
 		8A47474828C62D420091EEBA /* ResultState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultState.swift; sourceTree = "<group>"; };
 		8A47474B28C62E220091EEBA /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		8A47474D28C6372C0091EEBA /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		8A47474F28C64F4B0091EEBA /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A47475328C64FCB0091EEBA /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				8A195D4A28C1EDA20002F61B /* HomeView.swift */,
+				8A47474D28C6372C0091EEBA /* ErrorView.swift */,
+				8A47474F28C64F4B0091EEBA /* ArticleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,6 +165,9 @@
 			dependencies = (
 			);
 			name = SwiftUI_Combine_MVVM;
+			packageProductDependencies = (
+				8A47475228C64FCB0091EEBA /* URLImage */,
+			);
 			productName = SwiftUI_Combine_MVVM;
 			productReference = 8A195D3328C1E7670002F61B /* SwiftUI_Combine_MVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -185,6 +196,9 @@
 				Base,
 			);
 			mainGroup = 8A195D2A28C1E7670002F61B;
+			packageReferences = (
+				8A47475128C64FCB0091EEBA /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = 8A195D3428C1E7670002F61B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -218,6 +232,8 @@
 				8A47474928C62D420091EEBA /* ResultState.swift in Sources */,
 				8A195D3728C1E7670002F61B /* SwiftUI_Combine_MVVMApp.swift in Sources */,
 				8A47474028C6026E0091EEBA /* EndPOint.swift in Sources */,
+				8A47475028C64F4B0091EEBA /* ArticleView.swift in Sources */,
+				8A47474E28C6372C0091EEBA /* ErrorView.swift in Sources */,
 				8A47474328C604AC0091EEBA /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +435,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8A47475128C64FCB0091EEBA /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8A47475228C64FCB0091EEBA /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A47475128C64FCB0091EEBA /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8A195D2B28C1E7670002F61B /* Project object */;
 }
